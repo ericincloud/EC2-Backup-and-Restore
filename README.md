@@ -1,13 +1,13 @@
 # EC2-Backup-and-Restore
-#### How to backup an EC2 instance and restore it! <br> In this guide we will create an EC2 instance, create an example text file within it, then backup and restore!
+#### EC2 Backup and Restore is crucial for ensuring data protection, business continuity, and compliance. Backups prevent data loss, enable quick recovery from failures, and minimize downtime. In addition, backup/restore support disaster recovery, safeguard against threats like ransomware, and facilitate testing. 
 
-## Step 1: Create an EC2 instance (Optional)
-#### Create an EC2 instance or choose a prepared instance you would like to backup. We will be using instance `TEST-Public` as the the backup intance. 
+## Step 1: Create an EC2 instance 
+#### Create an EC2 instance or choose a prepared instance you would like to backup. We will be using instance `TEST-Public` as the the backup instance. 
 
 ![IMAGE](https://github.com/ericincloud/EC2-Backup-and-Restore/blob/main/EC2Test-1.JPG)
 
 ## Step 2: SSH/Connect into Backup instance
-#### Connect to the Backup instance using SSH or an alternative method. Use command `ssh -i your-key.pem ec2-user@your-instance-ip` or the PuTTY application to SSH. 
+#### Connect to the instance using SSH or an alternative method. Use command `ssh -i your-key.pem ec2-user@your-instance-ip` or the PuTTY application to SSH. 
 
 ## Step 3: Create a new file (Optional)
 #### Create a new file `example.txt` using the nano text editor. Use command `touch example.txt` to create the file then command `nano example.txt` to edit and type something in! Press `CTRL + X` then `Y` to save. If done correctly, you can view the text you entered by using command `cat example.txt`.
@@ -30,7 +30,7 @@
 #### Congratulations! You've successfully backed-up and restored an EC2 instance!
 ![IMAGE](https://github.com/ericincloud/EC2-Backup-and-Restore/blob/main/Restored-EC2.JPG)
 
-## Tips
+## Notes
 #### When using Instance Connect, connect as `ec2-user`.
 
 ## Reference
